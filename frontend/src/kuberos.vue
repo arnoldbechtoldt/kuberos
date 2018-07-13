@@ -99,7 +99,7 @@ export default {
       });
     },
     templateURL: function() {
-      return "kubecfg.yaml?" + $.param(this.kubecfg);
+      return "kubecfg" + this.kubecfg.usernameSuffix + ".yaml?" + $.param(this.kubecfg);
     },
     snippetSetCreds: function() {
       return (
